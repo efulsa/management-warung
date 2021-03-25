@@ -136,6 +136,7 @@ class UserController extends Controller
         try {
             $borrow = Transaction::where('user_id','=', $id)->get();
             return DataTables::of($borrow)
+            ->addIndexColumn()
                 ->editColumn('created_at', function ($borrow) {
                     return [
                         'display' => date('y/F/d', strtotime($borrow->created_at)),

@@ -101,21 +101,25 @@
         </div>
         <div class="card-body">
             <h1 class="text-center">Riwayat Pinjaman</h1>
-
-            <table id="dtTableTrans" class="text-nowrap table table-hover table-sm table-striped">
-                <thead>
-                <tr>
-                    <th style="width: 5%">ID</th>
-                    <th class="text-center">Tanggal</th>
-                    <th class="text-center">Nama</th>
-                    <th class="text-center">Pinjam</th>
-                    <th class="text-center">Bayar</th>
-                    <th class="text-center">Saldo</th>
-                    <th class="text-center">Total</th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <table id="dtTableTrans" class="table table-hover table-sm table-bordered table-striped table-responsive-lg text-nowrap">
+                        <thead>
+                        <tr>
+                            <th style="width: 5%">No</th>
+                            <th class="text-center">ID</th>
+                            <th class="text-center">Tanggal</th>
+                            <th class="text-center">Nama</th>
+                            <th class="text-center">Pinjam</th>
+                            <th class="text-center">Bayar</th>
+                            <th class="text-center">Saldo</th>
+                            <th class="text-center">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <input type="hidden" id="url-trans-store" value="{{ route('admin.transaction.store') }}">

@@ -109,6 +109,7 @@ class TransactionController extends Controller
         try {
             $borrows = Transaction::all();
             return DataTables::of($borrows)
+            ->addIndexColumn()
                 ->addColumn('user', function ($borrows) {
                     return $borrows->user->name;
                 })

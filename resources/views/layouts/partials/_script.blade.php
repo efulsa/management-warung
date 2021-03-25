@@ -15,8 +15,8 @@
 <!-- DataTables -->
 <script src="{{ asset('themes/plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('themes/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
-<script src="{{ asset('themes/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
-<script src="{{ asset('themes/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+{{-- <script src="{{ asset('themes/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ asset('themes/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script> --}}
 <script src="{{ asset('themes/plugins/datatables-select/js/dataTables.select.min.js') }}"></script>
 <script src="{{ asset('themes/plugins/datatables-select/js/select.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('themes/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
